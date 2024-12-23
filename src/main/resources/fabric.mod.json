@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "colorful-torches",
+	"version": "${version}",
+	"name": "Colorful Torches",
+	"description": "A mod that adds variation in torches as well as a couple secret torches",
+	"authors": [
+		"McStagger"
+	],
+	"contact": {
+		"homepage": "https://mcstagger.net",
+		"sources": "https://github.com/McStagger/ColorfulTorches"
+	},
+	"license": "MIT",
+	"icon": "assets/colorful-torches/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mcstagger.colorfultorches.ColorfulTorches"
+		],
+		"fabric-datagen": [
+			"net.mcstagger.colorfultorches.ColorfulTorchesDataGenerator"
+		],
+		"client": [
+			"net.mcstagger.colorfultorches.ColorfulTorchesClient"
+		]
+	},
+	"mixins": [
+		"colorful-torches.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
